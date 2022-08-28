@@ -1,5 +1,5 @@
 plugins {
-  kotlin("jvm") version "1.6.10"
+  kotlin("jvm") version "1.7.10"
   application
 }
 
@@ -11,9 +11,9 @@ repositories {
 }
 
 dependencies {
-  implementation("com.eatthepath:java-otp:0.3.1")
+  implementation("com.eatthepath:java-otp:0.4.0")
   implementation("com.google.guava:guava:31.1-jre")
-  implementation("com.microsoft.playwright:playwright:1.17.1")
+  implementation("com.microsoft.playwright:playwright:1.25.0")
   implementation(kotlin("stdlib-jdk8"))
 }
 

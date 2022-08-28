@@ -40,7 +40,7 @@ fun main() {
     page.type("#auth-mfa-otpcode", getMfaCode())
     page.click("#auth-signin-button")
 
-    page.waitForSelector("""#yourOrdersContent :text("Your Orders")""")
+    page.waitForSelector("""h1:text("Your Orders")""")
     println("Successfully navigated to $orderHistoryUrl")
 
     for (i in 1..giftCardCount) {
